@@ -1,0 +1,12 @@
+public class funcInte {
+    public static void main(String[] args) {
+        MyInterface obj = () -> System.out.println("Hello Java 8");
+        obj.display();
+    }
+}
+
+@FunctionalInterface
+interface MyInterface {
+    void display();
+}
+

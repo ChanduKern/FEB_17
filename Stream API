@@ -1,0 +1,14 @@
+import java.util.*;
+import java.util.stream.*;
+
+public class streamAPI {
+    public static void main(String[] args) {
+        List<Integer> salaries = Arrays.asList(30000, 60000, 45000, 80000);
+
+        List<Integer> highSalary = salaries.stream()
+                                           .filter(s -> s > 50000)
+                                           .collect(Collectors.toList());
+
+        System.out.println(highSalary);
+    }
+}

@@ -1,0 +1,14 @@
+interface Vehicle {
+    default void fuelType() {
+        System.out.println("Petrol or Diesel");
+    }
+}
+
+class Car implements Vehicle {}
+
+public class Test {
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.fuelType();
+    }
+}
